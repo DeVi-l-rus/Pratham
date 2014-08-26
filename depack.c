@@ -9,6 +9,18 @@ void main()
 	
 	while(1)
 	{
-		
+		if (temp = '01111110')
+		{
+			goto decode;
+		}
+		temp = recieve();
 	}
+	
+	decode:
+	do
+	{
+		temp = recieve();
+		
+		if (temp == )
+	}while(temp != '01111110');
 }
