@@ -10,16 +10,14 @@ int count=0;
 
 void main()
 {
-	temp[count] = recieve();
-	
 	while(1)
 	{
+		temp[count] = recieve();
 		if (temp[count] = '01111110')
 		{
 			count++;
 			goto decode;
 		}
-		temp[count] = recieve();
 	}
 	
 	decode:
@@ -53,6 +51,10 @@ void main()
 		if(strcmp(crc_act, crc))
 		{
 			cout<< "The recieved code is correct...!!";
+		}
+		else
+		{
+			cout<<"The recieved code is incorrect...!! you're in trouble now.... :D :D";
 		}
 		
 	}
